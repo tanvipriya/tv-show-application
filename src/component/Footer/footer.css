@@ -1,0 +1,16 @@
+.footer-container-wrapper {
+  min-width: 1366px;
+  width: 98%;
+  background: #12898a;
+  border-radius: 3px;
+  color: #fff;
+  padding: 12px 24px;
+  height: auto;
+  position: absolute;
+  bottom: 0;
+}
+.footer-container-wrapper .footer-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
