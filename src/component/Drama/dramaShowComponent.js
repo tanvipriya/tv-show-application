@@ -6,7 +6,6 @@ import Header from "../Header/header";
 import "./dramaShowComponent.css";
 
 function DramaShowComponent({ match }) {
-  console.log("match", match);
   const dispatch = useDispatch();
 
   const dramaShowData = useSelector((state) => state.dramaShowReducer.payload);
@@ -17,25 +16,23 @@ function DramaShowComponent({ match }) {
         `https://api.tvmaze.com/search/shows?q=${match.params.name}`
       )
     );
-    // setAllShowData(data);
   }, [dispatch, match.params.name]);
 
   return (
     <div className="drama-container-wrapper">
       <Header classname="drama" />
-      {/* <ShowAllMovieComponent movies={data} /> */}
       <div className="movie-all-card-loader">
         {dramaShowData
           .map((x) => x.show)
           .map((movie) => {
-            const { id, image, name, premiered, rating } = movie;
+            // const { id, image, name, premiered, rating } = movie;
             return (
               <div className="card-wrapper">
                 <div className="image-wrapper">
-                  <img className="image" src={image?.medium} alt="" />
+                  <img className="image" src={movie.image?.medium} alt="" />
                 </div>
                 <Link
-                  to={`shows/${id}`}
+                  to={`shows/${movie.id}`}
                   style={{
                     position: "absolute",
                     top: "0",
@@ -46,11 +43,10 @@ function DramaShowComponent({ match }) {
                 />
                 <div className="card-content">
                   <div className="card-title">
-                    {/* movies */}
-                    {name} ({premiered.split("-")[0]})
+                    {movie.name} ({movie.premiered.split("-")[0]})
                   </div>
                   <div className="rating-map">
-                    {rating.average ? rating.average : "0"}
+                    {movie.rating.average ? movie.rating.average : "0"}
                   </div>
                 </div>
               </div>

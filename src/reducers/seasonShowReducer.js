@@ -16,6 +16,6 @@ export default function (state = initialState, action) {
 const executeSeasonSelectednDataSucess = (state, action) => {
   return {
     ...state,
-    payload: action.season,
+    payload: action.payload,
   };
 };

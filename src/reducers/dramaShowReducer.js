@@ -16,6 +16,6 @@ export default function (state = initialState, action) {
 const executeDramaSelectednDataSucess = (state, action) => {
   return {
     ...state,
-    payload: action.drama,
+    payload: action.payload,
   };
 };

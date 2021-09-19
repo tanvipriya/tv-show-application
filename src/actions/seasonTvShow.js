@@ -1,23 +1,20 @@
 import { ActionTypes } from "./types";
 import axios from "axios";
 
-export const setSeasonTvShowData = (season) => {
+export const setSeasonTvShowData = (payload) => {
   return {
     type: ActionTypes.SET_SEASON_SHOW_TV_ALL,
-    season,
+    payload: payload,
   };
 };
 
-export const getSeasonTvShowData = (url, id) => {
+export const getSeasonTvShowData = (url) => {
   return (dispatch) => {
     axios
       .get(url)
       .then((response) => {
-        console.log("response", response);
         dispatch(setSeasonTvShowData(response.data));
       })
-      .catch((err) => {
-        console.log(err);
-      });
+      .catch((err) => {});
   };
 };

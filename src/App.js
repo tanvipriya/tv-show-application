@@ -27,9 +27,7 @@ const App = () => {
   return (
     <Provider store={store}>
       <Router>
-        {/* <Fragment> */}
         <Switch>
-          {/* <Navbar></Navbar> */}
           <Route exact path="/" component={Home} />
           <Route path="/shows/:id" component={SeasonShowComponent} />
           <Route path="/:name" component={DramaShowComponent} />

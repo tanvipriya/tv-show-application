@@ -1,6 +1,6 @@
 import axios from "axios";
 import * as redux from "react-redux";
-import { getSeasonTvShowData } from "../../actions/seasonTvShow";
+import { getDramaTvShowData } from "../../actions/dramaTvShow";
 
 const mockDispatch = jest.fn();
 jest.mock("react-redux", () => ({
@@ -8,18 +8,16 @@ jest.mock("react-redux", () => ({
   useDispatch: () => mockDispatch,
 }));
 describe("routes using memory router", () => {
-  test("should show Season Show  component to click the paticular season", () => {
+  test("should show Drama Show  component to click the paticular season", () => {
     const useDispatchSpy = jest.spyOn(redux, "useDispatch");
     const mockDispatchFn = jest.fn();
     useDispatchSpy.mockReturnValue(mockDispatchFn);
 
-    getSeasonTvShowData();
+    getDramaTvShowData();
 
-    expect(getSeasonTvShowData).toBe(getSeasonTvShowData);
+    expect(getDramaTvShowData).toBe(getDramaTvShowData);
 
     useDispatchSpy.mockClear();
   });
-  test("should show Season Show header component to click the paticular season", () => {
-    // w
-  });
+  test("should show Drama Show header component to click the paticular season", () => {});
 });

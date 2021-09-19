@@ -10,10 +10,6 @@ function ShowAllMovieComponent(movies) {
     return name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1;
   };
 
-  const showPageHandler = (id) => {
-    const redirect = `shows/${id}`;
-    history.replace("", redirect);
-  };
   return (
     <React.Fragment>
       <div className="movie-all-container-wrapper">

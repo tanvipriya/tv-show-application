@@ -9,20 +9,17 @@ import ShowAllMovieComponent from "../component/showAllMovieComponent";
 
 import Header from "../component/Header/header";
 import Footer from "../component/Footer/footer";
-// import { getAllShow } from "../actions/showalltv";
 
 function Home() {
-  // console.log("getAllShow", getAllShow);
   const hostURL = process.env.REACT_APP_TV_SERVER_URL;
   const imageURL = process.env.REACT_APP_TV_IMAGE_SERVER_URL;
   const [allShowData, setAllShowData] = useState([]);
   const [allFiveShowData, setAllFiveShowData] = useState([]);
   const dispatch = useDispatch();
 
-  const data = useSelector((state) => state.showAllShowReducer.payload);
-  // const allShowData = data.showAllShowReducer.payload;
-
-  console.log("getAllShowData", data);
+  const homeShowallData = useSelector(
+    (state) => state.showAllShowReducer.payload
+  );
 
   var settings = {
     dots: true,
@@ -35,15 +32,11 @@ function Home() {
 
   useEffect(() => {
     dispatch(getAllShowTvData("https://api.tvmaze.com/shows"));
-    setAllShowData(data);
+    setAllShowData(homeShowallData);
   }, []);
 
-  let showFiveArray = data.length > 5 ? data.slice(0, 10) : data;
-  // console.log("data", showFiveArray);
-  // console.log(
-  //   "allFiveShowData",
-  //   showFiveArray.map((img) => img.image.medium)
-  // );
+  let showFiveArray =
+    homeShowallData.length > 5 ? homeShowallData.slice(0, 10) : homeShowallData;
 
   return (
     <div className="home-container-wrapper">
@@ -62,7 +55,7 @@ function Home() {
         </div>
       </div>
 
-      <ShowAllMovieComponent movies={data} />
+      <ShowAllMovieComponent movies={homeShowallData} />
       <Footer />
     </div>
   );
