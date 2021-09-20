@@ -34,9 +34,10 @@ Below are the list which we have used to develop our application:
 
 ## Step to see the running application with the following screenshot
 
-- ![Display Home Page](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_1.png?raw=true "After run npm install")
-- ![Display Search](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_2.png?raw=true "Click on Learn More button")
-- ![Display the list of Season](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_3.png?raw=true "Display and Hightlight the list of Season")
+- ![Display Home Page](https://github.com/tanvipriya/tv-show-application/blob/main/src/images/screenshot/home.png "After run npm install")
+- ![Display Search](https://github.com/tanvipriya/tv-show-application/blob/main/src/images/screenshot/home_down.png "Click on Learn More button")
+- ![Display the list of Season](https://github.com/tanvipriya/tv-show-application/blob/main/src/images/screenshot/search.png "Display and Hightlight the list of Season")
+- ![Display the list of Season](https://github.com/tanvipriya/tv-show-application/blob/main/src/images/screenshot/deatil_page.png "Display and Hightlight the list of Season")
 
 ## Installation of Application
 
