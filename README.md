@@ -1,70 +1,68 @@
-# Getting Started with Create React App
+# World Movie - Open TV shows
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## The Application allows user to view a few lists(preferable horizontal list) of TV shows based on different genres (drama, comedy, sports, etc.)
 
-## Available Scripts
+This is a Single Page Application that presents a list that TV shows based on different genres (drama, comedy, sports, etc.) with the help of data from this resource url(https://www.tvmaze.com/api). when the user clicks on a TV show then the details of that tv show will be display on another screen.Moreover user is also able to search for a TV show to get the details.
 
-In the project directory, you can run:
+- Show the detail of show in front page with Season
+- Click the card and show the whole detail of the show in season
+- Every card display the rating of the Indivisual Show
+- User can search the show in Home Page
+- User can see the detail show based on genres(drama, action, comedy)
 
-### `npm start`
+## Architectural Design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+The application has been created using React JS libraries and JS frameworks.There are many benifits of choosing this, which has been listed below
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Consistent global state
+- Better scalability
+- Better testability
+- Decoupled components – The architecture use Redux-thunk Middleware to tie decoupled components together and to support asynchronous flow for better testability.
 
-### `npm test`
+## Tools and Technology used:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Below are the list which we have used to develop our application:
 
-### `npm run build`
+- React Js as as a frontend programming language(In some place class component structure also maintained).
+- Hook as a front-end library.
+- Add APIService file to call the Json
+- Jest TEST module for writing Integration test with code coverage and snapshot.
+- Cypress Integration for End-to-end Testing.
+- IDE used ( Visual Studio Code ).
+- GIT as a repository for Distributed Version Control System.
+- POSTMAN as a REST Client.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Step to see the running application with the following screenshot
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- ![Display Home Page](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_1.png?raw=true "After run npm install")
+- ![Display Search](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_2.png?raw=true "Click on Learn More button")
+- ![Display the list of Season](https://github.com/tanvipriya/F1,_champions_season/blob/main/screenshot/Screenshot_3.png?raw=true "Display and Hightlight the list of Season")
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Installation of Application
 
-### `npm run eject`
+- Clone the repo
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  ```
+  git clone https://github.com/tanvipriya/tv-show-application.git
+  ```
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Install NPM packages
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  ```
+  npm install -d
+  ```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- Start Application
+  ```
+  npm run start
+  ```
+- Run test cases and coverage tests
+  ```
+  npm run test
+  ```
 
-## Learn More
+## Thank you and welcome everyone to use our Application..!!!
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- For any Queries, please reach out to me on below communication channel
+- Email = tanvipriya08@gmail.com
+- Mobile = +31 644625307

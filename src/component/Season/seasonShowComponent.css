@@ -8,8 +8,8 @@
   grid-column: col-start / span 12;
 }
 .season-container-wrapper .season-landing-container {
-  min-width: 1366px;
-  width: 100%;
+  /* min-width: 1366px;
+  width: 100%; */
   height: 800px;
   background: #057770;
   background: linear-gradient(140deg, #b9cead fa 45%, #ab5769 100%);
@@ -33,7 +33,7 @@
   height: 513px;
 }
 .season-container-wrapper .season-landing-container--text-container {
-  width: 60%;
+  width: 50%;
   text-align: center;
   line-height: 37px;
   margin-left: 42px;
