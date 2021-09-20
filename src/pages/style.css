@@ -1,7 +1,7 @@
 .home-container-wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 20px;
+  /* gap: 20px; */
   min-width: 1366px;
 }
 .home-container-wrapper > * {
@@ -24,6 +24,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 24px 24px 0;
+  margin-bottom: 18px;
 }
 .home-container-wrapper .home-heading-container .logo-holder img {
   width: 250px;

@@ -7,6 +7,7 @@ jest.mock("react-redux", () => ({
   useSelector: jest.fn(),
   useDispatch: () => mockDispatch,
 }));
+
 describe("routes using memory router", () => {
   test("should show Drama Show  component to click the paticular season", () => {
     const useDispatchSpy = jest.spyOn(redux, "useDispatch");

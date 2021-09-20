@@ -3,6 +3,12 @@ import { ActionTypes } from "../actions/types";
 const initialState = {
   payload: [],
 };
+/**
+ * Drama All Tv Show  functionality
+ * @param {state, action} props Component props
+ * @param {executeDramaSelectednDataSucess} props.action Add is in progress
+ * @param {function} props.dramaShowReducer Type text callback function
+ */
 
 export default function (state = initialState, action) {
   switch (action.type) {

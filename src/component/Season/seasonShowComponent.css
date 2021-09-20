@@ -1,7 +1,7 @@
 .season-container-wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 20px;
+  /* gap: 20px; */
   min-width: 1366px;
 }
 .season-container-wrapper > * {
@@ -54,8 +54,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  top: -2px;
-  right: -430px;
+  top: 2px;
+  right: -341px;
   width: 5rem;
   height: 4rem;
   /* border-radius: 50%;
@@ -107,6 +107,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 24px 24px 0;
+  margin-bottom: 18px;
 }
 .season-container-wrapper .season-heading-container .logo-holder img {
   width: 250px;

@@ -6,6 +6,14 @@ import SearchBar from "./searchbar";
 function ShowAllMovieComponent(movies) {
   const [searchValue, setSearchValue] = useState("");
   const history = useHistory();
+
+  /**
+   * Fiter functionality
+   * @param {name} props Component props
+   * @param {bool} props.filter Shows if filter is in progress
+   * @param {function} props.filterNames Type text callback function
+   */
+
   const filterNames = ({ name }) => {
     return name.toLowerCase().indexOf(searchValue.toLowerCase()) !== -1;
   };

@@ -6,11 +6,17 @@ import Header from "../Header/header";
 import "./dramaShowComponent.css";
 
 function DramaShowComponent({ match }) {
+  /**
+   * @desc call dispatch method from react-redux
+   */
   const dispatch = useDispatch();
 
   const dramaShowData = useSelector((state) => state.dramaShowReducer.payload);
 
   useEffect(() => {
+    /**
+     * @emit send URL to action through dispatch method
+     */
     dispatch(
       getDramaTvShowData(
         `https://api.tvmaze.com/search/shows?q=${match.params.name}`
@@ -25,7 +31,6 @@ function DramaShowComponent({ match }) {
         {dramaShowData
           .map((x) => x.show)
           .map((movie) => {
-            // const { id, image, name, premiered, rating } = movie;
             return (
               <div className="card-wrapper">
                 <div className="image-wrapper">

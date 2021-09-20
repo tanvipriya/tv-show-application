@@ -15,9 +15,18 @@ import "../src/App.css";
 import Home from "./pages/Home";
 import SeasonShowComponent from "./component/Season/seasonShowComponent";
 import DramaShowComponent from "./component/Drama/dramaShowComponent";
-
+/**
+ * Create an instance using the default constructor
+ * @param {state} reducer Component props
+ * @param {method} loggerMiddleware store props
+ */
 const loggerMiddleware = createLogger();
 
+/**
+ * Create an custom store the default constructor
+ * @param {thunkMiddleware} redux react-redux props
+ * @param {method} store store props
+ */
 const store = createStore(
   reducers,
   applyMiddleware(thunkMiddleware, loggerMiddleware)

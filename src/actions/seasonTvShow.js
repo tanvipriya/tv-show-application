@@ -1,6 +1,10 @@
 import { ActionTypes } from "./types";
 import axios from "axios";
 
+/**
+ * @desc add method setDramaTvShowData based of payload
+ */
+
 export const setSeasonTvShowData = (payload) => {
   return {
     type: ActionTypes.SET_SEASON_SHOW_TV_ALL,
@@ -9,6 +13,9 @@ export const setSeasonTvShowData = (payload) => {
 };
 
 export const getSeasonTvShowData = (url) => {
+  /**
+   * @desc call the dispatch method through useEffect
+   */
   return (dispatch) => {
     axios
       .get(url)

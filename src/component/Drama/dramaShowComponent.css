@@ -1,7 +1,7 @@
 .drama-container-wrapper {
   display: grid;
   grid-template-columns: repeat(12, [col-start] 1fr);
-  gap: 20px;
+  /* gap: 20px; */
   min-width: 1366px;
 }
 .drama-container-wrapper > * {
@@ -103,6 +103,7 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 24px 24px 0;
+  margin-bottom: 18px;
 }
 .drama-container-wrapper .drama-heading-container .logo-holder img {
   width: 250px;

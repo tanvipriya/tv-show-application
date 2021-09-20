@@ -1,3 +1,7 @@
+/**
+ * @desc add all the action as ActionTypes
+ */
+
 export const ActionTypes = {
   SET_SHOW_TV_ALL: "SET_SHOW_TV_ALL",
   SET_SHOW_TV_ERROR: "SET_SHOW_TV_ERROR",

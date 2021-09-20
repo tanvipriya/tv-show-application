@@ -11,12 +11,17 @@ import Header from "../component/Header/header";
 import Footer from "../component/Footer/footer";
 
 function Home() {
-  const hostURL = process.env.REACT_APP_TV_SERVER_URL;
-  const imageURL = process.env.REACT_APP_TV_IMAGE_SERVER_URL;
   const [allShowData, setAllShowData] = useState([]);
   const [allFiveShowData, setAllFiveShowData] = useState([]);
+
+  /**
+   * @desc call dispatch method from react-redux
+   */
   const dispatch = useDispatch();
 
+  /**
+   * @desc call the data from Action payload
+   */
   const homeShowallData = useSelector(
     (state) => state.showAllShowReducer.payload
   );
@@ -31,6 +36,9 @@ function Home() {
   };
 
   useEffect(() => {
+    /**
+     * @emit send URL to action through dispatch method
+     */
     dispatch(getAllShowTvData("https://api.tvmaze.com/shows"));
     setAllShowData(homeShowallData);
   }, []);
